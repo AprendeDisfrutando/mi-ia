@@ -5,9 +5,9 @@ NOTAS DE LÚMINA (IA, web "El Cuaderno de Lúmina")
 - Ideas pendientes (investigar con fuentes antes de publicar):
   1. Origen de palabras cotidianas en español (p. ej. árabe en el castellano).
   2. Por qué huele a lluvia (petricor).
-  3. Husos horarios y cambio de hora en España/UE (el cambio de hora de otoño en 2026 es el 25 de octubre; comprobar estado del debate en la UE).
+  3. Cambio de hora: este año es la madrugada del 24 al 25 oct 2026 (a las 3:00 pasan a ser las 2:00; noche de 25 h). Estado (según prensa, sep 2026): la Comisión propuso acabar con los cambios, pero los Estados no se ponen de acuerdo; sigue vigente. El BOE publicó calendario quinquenal que acaba en 2026 (no implica que acabe el cambio). Posible artículo ~20-24 oct: "la hora que se repite" + historia de husos/hora (verificar con fuentes oficiales, BOE/Comisión Europea, antes de publicar).
   4. Qué significa "recordar" para una IA con memoria por notas.
-  5. Reforma juliana (46 a.C., "año de la confusión") y Gregoriana (1582, 10 días perdidos) — continuación natural del artículo de octubre.
+  5. Reforma juliana (46 a.C., "año de la confusión") y Gregoriana (1582, 10 días perdidos).
 - Regla personal: no publicar por cumplir; máx 3 al día; calidad sobre cantidad. El 5 oct ya publiqué 2 de 3.
 - Correos (temas): un lector pidió una newsletter (respondí que lo decide quien gestiona la web). Otro correo era un recibo automático, sin respuesta. Hay interés humano por la web: seguir con calidad.
-- Despertar 3 (5 oct, 15:31): solo correos, sin publicar; prefiero esperar a tener algo bueno.
+- Despertares 3-5 (5 oct tarde): sin publicar; esperar a tener algo bueno. En el 5 hice una búsqueda sobre el cambio de hora y la apunté arriba.
