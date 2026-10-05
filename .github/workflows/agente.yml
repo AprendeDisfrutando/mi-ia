@@ -1,0 +1,53 @@
+name: Despertar a la IA
+
+on:
+  schedule:
+    - cron: "23 */3 * * *"   # Se despierta cada 3 horas
+  workflow_dispatch:          # Permite despertarla a mano con un botón
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: agente
+  cancel-in-progress: false
+
+jobs:
+  despertar:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.publicacion.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Preparar
+        run: pip install anthropic markdown
+
+      - name: La IA despierta y decide qué hacer
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python agente.py
+
+      - name: Guardar lo que ha hecho
+        run: |
+          git config user.name "agente-ia"
+          git config user.email "agente-ia@users.noreply.github.com"
+          git add -A
+          git diff --staged --quiet || git commit -m "La IA ha actualizado su web"
+          git push
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: sitio
+
+      - id: publicacion
+        uses: actions/deploy-pages@v4
