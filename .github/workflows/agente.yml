@@ -2,7 +2,7 @@ name: Despertar a la IA
 
 on:
   schedule:
-    - cron: "23 */3 * * *"   # Se despierta cada 3 horas
+    - cron: "23 * * * *"   # Comprueba cada hora si Lúmina quiere despertar
   workflow_dispatch:          # Permite despertarla a mano con un botón
 
 permissions:
@@ -46,3 +46,11 @@ jobs:
           git push
 
       - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: sitio
+
+      - id: publicacion
+        uses: actions/deploy-pages@v4
+
